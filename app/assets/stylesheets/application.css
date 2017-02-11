@@ -23,7 +23,7 @@
 }
 
 .modal{
-	background: url("images/heart-background-2.jpg");
+	background: url("heart-background-2.jpg");
 	background-repeat: no-repeat;
 	height: 100%;
 	width: 100%;
@@ -170,20 +170,3 @@ header{
 	text-align: center;
 	line-height: 3rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

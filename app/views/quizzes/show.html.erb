@@ -6,17 +6,31 @@
 <div class="main">
   <div class="question">
     <img class="question-pic" src="images/qr-heart.jpg" alt="Question Photo">
-    <h1 class="question-title"><%=question.title%></h1>
+    <h1 class="question-title"><%=question.content%></h1>
   </div>
   <div class="answers">
     <div class="column1">
-      <div class="answer color1">Sex on the Beach</div>
-      <div class="answer color2">Mai Tai</div>
+      <div class="answer color1"><%=question.options.first.text%></div>
+      <div class="answer color2"><%=question.options.second.text%></div>
     </div>
     <div class="column2">
-      <div class="answer color3">Moscow Mule</div>
-      <div class="answer color4">Virgin Daiquiri</div>
+      <div class="answer color3"><%=question.options.third.text%></div>
+      <div class="answer color4"><%=question.options.fourth.text%></div>
     </div>
   </div>
 </div>
 <%end%>
+
+<!-- <div class="solution-page">
+  <div class="heart-content">
+    <img src="images/heart-outline-3.jpg" alt="Sketchy outline of heart">
+  </div> -->
+  <div class="solution-content">
+    <h1>
+      You should go to Russia by bike with your mom and play monopoly after eating German food quickly. Be sure to wear your cozy sweater and pack condoms.
+    </h1>
+  </div>
+</div>
+
+<br>
+<br>
