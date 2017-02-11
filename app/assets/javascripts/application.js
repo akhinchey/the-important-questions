@@ -13,3 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(".modal button").on("click", function(){
+	$(".modal").hide();
+});
+
+$(".main .answer").on("click", function(){
+	$(".main").hide();
+	$(".solution-page").show();
+});
