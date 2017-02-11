@@ -1,7 +1,5 @@
 class QuizzesController < ApplicationController
 
-  def new
-  end
 
   def create
     @quiz = Quiz.create
@@ -28,6 +26,13 @@ class QuizzesController < ApplicationController
         question_3.options.create(text: "Party of one")
 
         redirect_to quiz_path(@quiz)
+  end
+
+  def new
+    @quiz = Quiz.new
+  end
+
+  def show
   end
 
 end
