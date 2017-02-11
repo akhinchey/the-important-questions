@@ -2,10 +2,11 @@
   <h2>The Important Questions</h2>
 </header>
 
+<% @quiz.questions.each do |question|%>
 <div class="main">
   <div class="question">
     <img class="question-pic" src="images/qr-heart.jpg" alt="Question Photo">
-    <h1 class="question-title">If you were a cocktail what would you be?</h1>
+    <h1 class="question-title"><%=question.title%></h1>
   </div>
   <div class="answers">
     <div class="column1">
@@ -18,3 +19,4 @@
     </div>
   </div>
 </div>
+<%end%>
